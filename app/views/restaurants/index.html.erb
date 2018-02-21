@@ -1,10 +1,12 @@
-<h1>List of Restaurants</h1>
+<div class="container">
+  <h1>List of Restaurants</h1>
 
-<% @restaurants.each do |restaurant| %>
-  <div><%= restaurant.name %>
-  <%= link_to 'Show', restaurant %>
-  <%= link_to 'Edit', edit_restaurant_path(restaurant) %>
-  <%= link_to 'Destroy', restaurant, method: :delete, data: { confirm: 'Are you sure?' } %></div>
-<% end %>
-
-<%= link_to 'Add new', new_restaurant_path %>
+  <% @restaurants.each do |restaurant| %>
+    <div><%= restaurant.name %>
+    <%= link_to 'Show', restaurant, class: "btn btn-primary" %>
+    <%= link_to 'Edit', edit_restaurant_path(restaurant), class: "btn btn-success" %>
+    <%= link_to 'Destroy', restaurant, class: "btn btn-warning", method: :delete, data: { confirm: 'Are you sure?' } %></div>
+  </br>
+  <% end %>
+  <p><%= link_to 'Add new', new_restaurant_path, class: "btn btn-danger" %></p>
+</div>

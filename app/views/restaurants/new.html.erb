@@ -1,5 +1,7 @@
-<h1>New Restaurant</h1>
+<div class="container">
+  <h1>New Restaurant</h1>
 
-<%= render 'form', restaurant: @restaurant %>
-
-<%= link_to 'Back', restaurants_path %>
+  <%= render 'form', restaurant: @restaurant %>
+  </br>
+  <%= link_to 'Back', restaurants_path, class: "btn btn-primary"  %>
+</div>

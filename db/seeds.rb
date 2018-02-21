@@ -15,31 +15,31 @@ restaurants_attributes = [
     name:         'Dishoom',
     address:      '7 Boundary St, London E2 7JE',
     category:  'french',
-    rating:        5
+    phone_number:        '689-762-7621'
   },
   {
     name:         'Pizza East',
     address:      '56A Shoreditch High St, London E1 6PQ',
     category:  'italian',
-    rating:        4
+    phone_number:        '689-762-7622'
   },
     {
     name:         'Sushi Sushi',
     address:      '7 Warlock Road, London W9 34E',
     category:  'japanese',
-    rating:        5
+    phone_number:        '689-762-7624'
   },
   {
     name:         'China East',
     address:      '28 Middleton Avenue, London N9 2PF',
     category:  'chinese',
-    rating:        3
+    phone_number:        '689-762-7634'
   },
     {
     name:         'Casa Cha',
     address:      '55 Rua do Cabo, Lisbon 34613',
     category:  'belgian',
-    rating:        2
+    phone_number:        '689-762-7231'
   }
 ]
 Restaurant.create!(restaurants_attributes)
