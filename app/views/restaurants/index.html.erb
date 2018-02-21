@@ -1,0 +1,6 @@
+<% @restaurants.each do |restaurant| %>
+  <div><%= restaurant.name %>
+  <%= link_to 'Show', restaurant %>
+  <%= link_to 'Edit', edit_restaurant_path(restaurant) %>
+  <%= link_to 'Destroy', restaurant, method: :delete, data: { confirm: 'Are you sure?' } %></div>
+<% end %>
