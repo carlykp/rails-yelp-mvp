@@ -16,8 +16,8 @@
   </div>
 
   <div class="form-group">
-    <%= f.label :category %>
-    <%= f.text_field :category, class: 'form-control' %>
+    <%= f.label :category %><br>
+    <%= f.select :category, [ "chinese", "italian", "japanese", "french", "belgian" ], :prompt => 'Select One' %>
   </div>
   <%= f.submit class: 'btn btn-primary' %>
 <% end %>
